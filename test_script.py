@@ -8,4 +8,4 @@ def main(loan_id):
         print("please provide a number")
 
 if __name__ == "__main__":
-    main(customer_id)
+    main(sys.argv[1])
