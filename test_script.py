@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 
 #import postgres module
 import psycopg2
