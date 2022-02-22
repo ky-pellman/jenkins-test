@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 #import postgres module
-from psycopg2 import psycopg2
+#import psycopg2
 #import sys library to interact with shell
 import sys
 
