@@ -4,6 +4,7 @@
 import psycopg2
 #import sys library to interact with shell
 import sys
+import csv
 
 def main(customer_id):
     """
@@ -12,10 +13,17 @@ def main(customer_id):
     The main(function) will determine if the argument is a number.
     It will then either return an exception or call connnect() with a sanitized and converted int.
     """
-    if customer_id.isnumeric():
-        connect(int(customer_id.strip()))
-    else:
-        print("please provide a valid number")
+    #if customer_id.isnumeric():
+        #connect(int(customer_id.strip()))
+    #else:
+        #print("please provide a valid number")
+        
+        
+    file = open(customer_id)
+    read = csv.reader(file)
+
+    for row in read:
+        print(row)
 
 def connect(customer_id):
     """
